@@ -1,0 +1,8 @@
+//
+// Created by samvaio on 6/2/17.
+//
+
+#ifndef SIMPLECLASSES_TRANSACTION_H
+#define SIMPLECLASSES_TRANSACTION_H
+
+#endif //SIMPLECLASSES_TRANSACTION_H
