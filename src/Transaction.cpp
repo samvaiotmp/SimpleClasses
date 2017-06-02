@@ -1,4 +1,4 @@
-//
-// Created by samvaio on 6/2/17.
-//
+#include "Transaction.h"
+
+using namespace std;
 

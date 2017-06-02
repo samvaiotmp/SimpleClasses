@@ -1,8 +1,11 @@
-//
-// Created by samvaio on 6/2/17.
-//
+#include <string>
 
-#ifndef SIMPLECLASSES_TRANSACTION_H
-#define SIMPLECLASSES_TRANSACTION_H
-
-#endif //SIMPLECLASSES_TRANSACTION_H
+class Transaction
+{
+private:
+    int amount;
+    std::string type;
+public:
+    Transaction(int amt, std::string kind);
+    std::string Report();
+};
