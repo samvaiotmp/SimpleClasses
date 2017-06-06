@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Account::Account(void):balance(0)
+Account::Account():balance(0)
 {
 }
 
@@ -19,3 +19,41 @@ vector<string> Account::Report()
 
     return report;
 }
+
+bool Account::Deposit(int amt)
+{
+    if (amt >=0)
+    {
+        balance += amt;
+        log.push_back(Transaction(amt,"Deposit"));
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool Account::Withdraw(int amt)
+{
+    if (amt >=0)
+    {
+        if (balance >= amt)
+        {
+            balance -= amt;
+            log.push_back(Transaction(amt, "Withdraw"));
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+        return false;
+    }
+}
+//
+//int Account::GetBalance()
+//{
+//    return balance;
+//}
