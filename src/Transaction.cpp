@@ -15,4 +15,5 @@ string Transaction::Report()
     report += type;
     report += " ";
     report += to_string(amount);
+    return report;
 }
